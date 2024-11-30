@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConverterX File</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WEBP to JPG/PNG Converter</h1>
+        <form id="converterForm">
+            <label for="fileInput" class="file-label">Choose a WEBP file:</label>
+            <input type="file" id="fileInput" accept=".webp" required>
+            
+            <label for="formatSelect" class="format-label">Select Output Format:</label>
+            <select id="formatSelect">
+                <option value="jpg">JPG</option>
+                <option value="png">PNG</option>
+            </select>
+            
+            <button type="button" id="convertButton">Convert</button>
+        </form>
+        <div id="progressContainer" class="progress-container">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <div id="downloadContainer" class="download-container">
+            <button id="downloadButton" style="display: none;">Download</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
